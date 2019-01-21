@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>无效口</item>
+        <item>输入口1</item>
+        <item>输入口2</item>
+        <item>输入口3</item>
+        <item>输入口4</item>
+        <item>输入口5</item>
+        <item>输入口6</item>
+        <item>输入口7</item>
+        <item>输入口8</item>
+        <item>输入口9</item>
+        <item>输入口10</item>
+        <item>输入口11</item>
+        <item>输入口12</item>
+        <item>输入口13</item>
+        <item>输入口14</item>
+        <item>输入口15</item>
+        <item>输入口16</item>
+        <item>输入口17</item>
+        <item>输入口18</item>
+    </string-array>
+</resources>

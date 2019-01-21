@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/io_layout"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        >
+    <!--app:layout_constraintBottom_toTopOf="@id/navigation"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--X轴相关**********************************************************-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="X轴相关" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="X轴正限：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <!--<RadioGroup
+                        android:id="@+id/radioGroup_sex_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">-->
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+
+                    <Spinner
+                        android:id="@+id/io_xSpinner11"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="X轴负限：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_xSpinner21"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="X轴零点：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_xSpinner31"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="X高速+：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_xSpinner41"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="X高速-：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_xSpinner51"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="X低速+：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_xSpinner61"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="X低速-：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn71"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_xSpinner71"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="X轴回零启动-：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn81"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="正向" />
+
+                    <CheckBox
+                        android:id="@+id/io_xRadioBtn82"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_xSpinner81"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <!--Y轴相关********************************************************-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Y轴相关" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Y轴正限：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_ySpinner11"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Y轴负限：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_ySpinner21"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Y轴零点：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_ySpinner31"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Y高速+：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_ySpinner41"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Y高速-：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_ySpinner51"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Y低速+：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_ySpinner61"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Y低速-：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn71"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="启用" />
+
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_ySpinner71"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Y轴回零启动：" />
+                    <!--io_radioBtn11,意为io界面第一行第一个单选框-->
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn81"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="正向" />
+
+                    <CheckBox
+                        android:id="@+id/io_yRadioBtn82"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常闭" />
+
+                    <Spinner
+                        android:id="@+id/io_ySpinner81"
+                        android:layout_weight="1"
+                        android:entries="@array/spingarr"></Spinner>
+                </TableRow>
+
+
+                <!--输出口相关********************************************************-->
+                <!--其他**************************************************************-->
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>

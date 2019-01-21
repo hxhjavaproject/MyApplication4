@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TOPCNC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">TOPCNC</string>
+    <string name="nav_header_subtitle">www.topcnc.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_menu_routine1">打开程序</string>
+    <string name="action_menu_routine2">保存程序</string>
+    <string name="action_menu_routine3">下载程序</string>
+    <string name="action_menu_routine4">删除程序</string>
+    <string name="title_routine">程序</string>
+    <string name="title_view">监控</string>
+    <string name="title_argument">参数</string>
+    <string name="title_io">IO</string>
+    <string name="hint_task">请在这里输入任务程序</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_empty">清空</string>
+    <string name="menu_argument1">下载参数</string>
+    <string name="menu_argument2">开机固件</string>
+    <string name="menu_argument3">恢复厂值</string>
+    <string name="operation_next">下一页</string>
+</resources>

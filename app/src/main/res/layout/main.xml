@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/bluetooh_main"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ScrollView
+		android:id="@+id/ScrollView01"
+		android:layout_width="match_parent"
+		android:layout_height="380dp"
+		app:layout_constraintBottom_toTopOf="@+id/fasong"
+		app:layout_constraintTop_toTopOf="parent"
+		android:background="@android:color/white"
+		android:scrollbars="vertical">
+
+		<TextView
+			android:id="@+id/in"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/black" />
+	</ScrollView>
+
+	<LinearLayout
+		android:id="@+id/fasong"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@+id/ScrollView01"
+		app:layout_constraintBottom_toTopOf="@+id/bluetooth_bottom_btn"
+		android:orientation="horizontal"
+		android:padding="3dp">
+
+		<EditText
+			android:id="@+id/Edit0"
+			android:layout_width="318dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="bottom"
+			android:layout_weight="1"
+			android:background="@android:color/white"
+			android:singleLine="false"
+			android:textColor="@android:color/black"
+			></EditText>
+
+		<Button
+			android:id="@+id/BtnSend"
+			style="@android:style/Widget.Button"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:onClick="onSendButtonClicked"
+			android:text="  发送  "></Button>
+	</LinearLayout>
+    <LinearLayout
+		android:id="@+id/bluetooth_bottom_btn"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <!--
+                <Button
+                    android:id="@+id/BtnConnect"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onConnectButtonClicked"
+                    android:text="连接"></Button>
+
+                <Button
+                    android:id="@+id/BtnSave"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onSaveButtonClicked"
+                    android:text="保存"></Button>
+
+                        <Button
+                            android:id="@+id/BtnClear"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onClearButtonClicked"
+                            android:text="清空"></Button>
+
+                        <Button
+                            android:id="@+id/BtnExit"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onQuitButtonClicked"
+                            android:text="退出"></Button>
+                            -->
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
